@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>login and registation form</title>
+	<link rel="stylesheet" href="loginform.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="formbox">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" style="margin-left:15px; background-image:linear-gradient(to right,#33CC33,#CCFF33,#FFFF00); border-radius:30px; transition:.5s; width:75px;" onclick="login()">log in</button>
+				<button type="button" class="toggle-btn" style="margin-left:10px; background-image:linear-gradient(to right,#00CC66,#CCFF99,#FFFF99); border-radius:30px; transition:.5s; width:75px;" onclick="register()">register</button> <!--background-image:linear-gradient(to right,#00CC66,#CCFF99,#FFFF99); -->
+		</div>
+			<div class="social-icons">
+			<img src="fb.png" style="margin-right:20px; margin-bottom: 23px;">
+			<img src="tw.png" style="margin-right:20px; margin-bottom: 17px;">
+			<img src="ln.png" style="margin-bottom: 26px;">
+	       </div>
+	       <form id="login" class="input-group">
+              <input type="text" class="input-field" placeholder="Enter mail id">
+              <input type="password" class="input-field" placeholder="Enter password">
+              <input type="checkbox" class="check-box"><span>Remember Password</span>
+              <center><button type="submit"class="submit-btn">Log in</button></center>
+	       </form>
+	       <form id="register" class="input-group">
+              <input type="text" class="input-field" placeholder="User id">
+               <input type="email" class="input-field" placeholder="Email id">
+              <input type="password" class="input-field" placeholder="Enter password">
+              <input type="checkbox" class="check-box"><span>I agree to the <a href="#">terms & conditions</a></span>
+              <center><button type="submit"class="submit-btn">register</button></center>
+	       </form>
+		</div>
+	</div>
+		
+		<script>
+			var x = document.getElementById("login");
+			var y = document.getElementById("register");
+			
+
+			function register(){
+				x.style.left = "-400px";
+				y.style.left = " 50px";
+				
+			}
+
+			function login(){
+				x.style.left = "50px";
+				y.style.left = "450px";
+				
+			}
+		</script>
+	</body>
+</html>
